@@ -1,4 +1,4 @@
-class DocsController < ApplicationController
+cla ss DocsController < ApplicationController
 
 def index
     
