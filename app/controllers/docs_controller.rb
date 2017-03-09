@@ -11,11 +11,14 @@ def show
 end
 
 def new
- @doc = Doc.new 
+ #@doc = Doc.new 
+ @doc = current_user.docs.build 
 end
 
 def create
-    @doc = Doc.new(docs_params)
+#@doc = Doc.new(docs_params)
+ @doc = current_user.docs.build(docs_params)
+
     if @doc.save
      redirect_to @doc
     else
