@@ -1,0 +1,9 @@
+/*
+ *= require_self
+ */
+
+@import 'normalize';
+//below files already exists, we just rename the files of scss and add it below here.
+@import "global.css.scss";
+@import "docs.css.scss";
+@import "welcome.css.scss";
